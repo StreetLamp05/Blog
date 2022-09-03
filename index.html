@@ -2,7 +2,7 @@
 <html>
 
 <head>
-   <meta name="viewport" content="with=device-width , initial-scale=1.0">
+   <meta name="viewport" content="with=device-width, initial-scale=1.0">
    <title> David Kan Blog </title>
    <link rel="stylesheet" href="style.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,13 +12,12 @@
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<secti>
    <section class="header"></section>
    <nav>
       <a href="index.html"><img src="images/logo.png"></a>
-      <div class="nav-links">
-         <i class="fa fa-times"></i>
-
+      <div class="nav-links" id="navLinks">
+         <i class="fa fa-times" onclick="hideMenu()"></i>
          <ul>
             <li><a href="">HOME</a></li>
             <li><a href="">ABOUT</a></li>
@@ -28,7 +27,7 @@
             <li><a href="">CONTACT</a></li>
          </ul>
       </div>
-      <i class="fa fa-bars"></i>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
 
    </nav>
    <div class="text-box">
@@ -36,6 +35,22 @@
       <p>This website was created to showcase side projects</p>
       <a href="https://github.com/StreetLamp05" target="_blank" class="hero-btn"> Visit My GitHub Profile </a>
    </div>
-</body>
 
+
+   <!-----JavaScript for the Hamburger Menu in Mobile View----->
+<script>
+
+var navLink = document.getElementById("navLinks");
+
+function showMenu(){
+   navLinks.style.right = "0";
+}
+
+function hideMenu(){
+   navLinks.style.right = "-200px"
+}
+
+</script>
+
+</body>
 </html>
