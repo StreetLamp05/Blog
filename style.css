@@ -4,7 +4,7 @@
    font-family: 'Open Sans', sans-serif;
 }
 
-body {
+.header {
    min-height: 100vh;
    width: 100%;
    background-image: linear-gradient(to left, rgba(40, 11, 43, 0.7), rgba(21, 16, 51, 0.7)), url(images/banner.png);
@@ -94,6 +94,9 @@ nav img {
    transition: 1s;
 }
 
+nav .fa{
+   display: none;
+}
 
 @media(max-width: 600px) {
    .text-box h1 {
@@ -115,7 +118,6 @@ nav img {
       z-index: 2;
       transition: 1s;
    }
-
    nav .fa {
       display: block;
       color: #fff;
@@ -123,6 +125,7 @@ nav img {
       font-size: 22px;
       cursor: pointer;
    }
+
    .nav-links ul{
       padding: 30px;
 
