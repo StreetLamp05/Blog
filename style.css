@@ -1,56 +1,117 @@
-*{
+* {
    margin: 0;
    padding: 0;
    font-family: 'Open Sans', sans-serif;
 }
 
-body{
+body {
    min-height: 100vh;
    width: 100%;
-   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.png);
+   background-image: linear-gradient(to left, rgba(40, 11, 43, 0.7), rgba(21, 16, 51, 0.7)), url(images/banner.png);
    background-position: center;
    background-size: cover;
    position: relative;
 }
 
-nav{
+nav {
    display: flex;
    padding: 2% 6%;
    justify-content: space-between;
    align-items: center;
 }
-nav img{
+
+nav img {
    width: 150px;
 }
 
-.nav-links{
+.nav-links {
    flex: 1;
    text-align: right;
 }
 
-.nav-links ul li{
+.nav-links ul li {
    list-style: none;
    display: inline-block;
    padding: 8px 12px;
    position: relative;
 }
 
-.nav-links ul li a{
+.nav-links ul li a {
    color: #fff;
    text-decoration: none;
    font-size: 13px;
 }
 
-.nav-links ul li::after{
-   content:'';
+.nav-links ul li::after {
+   content: '';
    width: 0%;
    height: 2px;
-   background: #f44336;
+   background: #f39b06;
    display: block;
    margin: auto;
    transition: 0.5s;
 }
 
-.nav-links ul li:hover::after{
+.nav-links ul li:hover::after {
    width: 100%
+}
+
+.text-box {
+   width: 90%;
+   color: #fff;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+}
+
+.text-box h1 {
+   font-size: 62px;
+}
+
+.text-box p {
+   margin: 10px 0 40px;
+   font-size: 14px;
+   color: #fff
+}
+
+.hero-btn {
+   display: inline-block;
+   text-decoration: none;
+   color: #fff;
+   border: 1px solid #fff;
+   padding: 12px 34px;
+   font-size: 13px;
+   background: transparent;
+   position: relative;
+   cursor: pointer;
+}
+
+.hero-btn:hover {
+   border: 1px solid #f39b06;
+   background: #f39b06;
+   transition: 1s;
+}
+
+
+@media(max-width: 600px) {
+   .text-box h1 {
+      font-size: 20px;
+   }
+
+   .nav-links ul li {
+      display: block;
+   }
+
+   .nav-links {
+      position: absolute;
+      background: #f39b06;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: 0;
+      text-align: left;
+      z-index: 2;
+   }
 }
