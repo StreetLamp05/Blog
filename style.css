@@ -200,9 +200,9 @@ nav .fa{
    margin-top: 100px;
 }
 
-/* ------ course ------------*/ 
+/* ------ details ------------*/ 
 
-.course{
+.details{
    width: 80%;
    margin: auto;
    text-align: center;
@@ -229,7 +229,7 @@ p{
    justify-content: space-between;
 }
 
-.course-col {
+.details-col {
    flex-basis: 31%;
    background: rgba(243, 155, 6,.35);
    border-radius: 10px;
@@ -246,7 +246,7 @@ h3{
 }
 
 
-.course-col:hover{
+.details-col:hover{
 box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
 
