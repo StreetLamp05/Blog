@@ -24,6 +24,39 @@ nav img {
    width: 200px;
 }
 
+/* makes the logo light up on hover */
+.wrapper{
+   width: 200px;
+}
+
+figure{
+   float: left;
+}
+.hover-ani {
+   position: relative;
+   width: 200px;
+   color: #fff
+}
+.hover-ani img{
+   position: absolute;
+   width: 200px;
+   left: 0;
+   -webkit-transition: opacity 1s ease-in-out;
+   -moz-transition: opacity 1s ease-in-out;
+   -ms-transition: opacity 1s ease-in-out;
+   -o-transition: opacity 1s ease-in-out;
+   transition: opacity 1s ease-in-out;
+}
+.hover-ani img.img-front {
+   opacity: 0;
+}
+
+.hover-ani img.img-front:hover {
+   opacity: 100;
+   cursor: pointer;
+}
+
+/* -------------------------- */ 
 .nav-links {
    flex: 1;
    text-align: right;
@@ -51,6 +84,7 @@ nav img {
    margin: auto;
    transition: 0.5s;
 }
+
 
 .nav-links ul li:hover::after {
    width: 100%
