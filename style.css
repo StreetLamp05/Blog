@@ -13,6 +13,7 @@
    position: relative;
 }
 
+
 nav {
    display: flex;
    padding: 2% 6%;
@@ -111,6 +112,11 @@ figure{
    color: #fff
 }
 
+.text-box .repo {
+   color: #f39b06;
+   text-decoration: none;
+}
+
 .hero-btn {
    display: inline-block;
    text-decoration: none;
@@ -168,6 +174,8 @@ nav .fa{
    }
 
    /* about page*/
+
+
 
    .row{
       flex-direction: column;
@@ -251,27 +259,29 @@ box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
 
 
-/*----- campus ----*/
+/*----- skills ----*/
 
-.campus{
+.skills{
    width: 80%;
    margin: auto;
    text-align: center;
    padding-top: 50px;
 }
 
-.campus-col{
+.skills-col{
+   background-color: rgba(65, 56, 42, 0.35);
    flex-basis: 32%; 
    border-radius: 10px;
    margin-bottom: 30px;
    position: relative;
    overflow: hidden;
+   margin-left: 5px;
+   margin-right: 5px;
 }
 
-.campus-col img{
+.skills-col img{
    width: 100%;
    display: block;
-
 }
 
 .layer{
@@ -285,7 +295,7 @@ box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
 
 .layer:hover{
-   background: rgba(243, 156, 6, 0.6);
+   background: rgba(0, 0, 0, 0.5);
 }
 .layer h2{
    width: 100%;
@@ -303,36 +313,6 @@ box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 .layer:hover h2{
    bottom: 49%;
    opacity: 1;
-}
-
-/*-----facilities------*/
-.facilities{
-   width: 80%;
-   margin: auto;
-   text-align: center;
-   padding-top: 100px;
-}
-
-.facilities-col{
-   flex-basis: 31%;
-   border-radius: 10px;
-   margin-bottom: 5%;
-   text-align: left;
-}
-
-.facilities-col img{
-   width: 100%;
-   border-radius: 10px;
-}
-
-.facilities-col p{
-   padding: 0;
-}
-
-.facilities-col h3{
-   margin-top: 16px;
-   margin-bottom: 15px;
-   text-align: left;
 }
 
 
