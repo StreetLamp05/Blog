@@ -361,3 +361,26 @@ h3 {
    cursor: pointer;
    padding: 18px 0;
 }
+
+
+
+/*---------contact form----------*/
+.contact-form {
+   background: rgba(21, 16, 51, 0.7);
+   color: #fff;
+   width: 640px;
+   margin: 50px auto;
+   max-width: 97%;
+   border-radius: 4px;
+   padding: 55px 30px;
+   transform: (50%, 70%);
+}
+
+.contact-label {
+   width: 90%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -30%);
+   text-align: center;
+}
