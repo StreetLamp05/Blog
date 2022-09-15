@@ -39,60 +39,48 @@
    
    <!------Contact Form------->
 
-<section class="contact-form">
-   <div class="contact-label">
-      <h1>Contact Me</h1>
-   </div>
-   <action="" method="get">
+<section class="contact">
+   <form action="">
+      <div class="contact-title">
+         <h1>Contact Me</h1>
+      </div>
+      <br>
       <div class="half">
          <div class="item">
-            <label for="fname">First Name: </label>
-            <input type="text" id="fname" name="fname"><br>
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+         </div>   
+         
+         <div class="item">
+            <label for="email">Email</label>
+            <input type="text" id="name" required>
          </div>
       </div>
-      <div class="item">
-         <label for="lname">Last Name: </label>
-         <input type="text" id="lname" name="lname">
-      </div>
-      <div class="item">
-         <label for="email">Email: </label>
-         <input type="text" id="email" name="email">
-      </div>
+<br>
       <div class="full">
-         <label for="message">Your Message</label>
-         <input type="text" id="message" name="message">
+
+         <label for="message">Message</label>
+         <textarea name="message" id="message"></textarea>
+
       </div>
+
       <div class="action">
-         <input type="submit" value="Send Message">
+         <input type="submit" value="Send">
       </div>
-      
-      
+
+      <div class="ficons">
+         <a href="https://github.com/StreetLamp05" target="_blank"><i class="fa fa-github"></i></a>
+         <a href="https://www.linkedin.com/in/david-kan-b79023249" target="_blank"><i class="fa fa-linkedin"></i></a>
+         <a href="https://open.spotify.com/user/david6832?si=uDW9ysqsQUyGFkp_Q0hqlA" target="_blank"><i
+               class="fa fa-spotify"></i></a>
+         <a href="https://www.instagram.com/kavid_dan" target="_blank"><i class="fa fa-instagram"></i></a>
+      </div>
    </form>
-   
+
+
 </section>
-</section>
 
 
-
-
-
-
-
-
-<!---footer---->
-<section class="footer">
-   <h4>About Me</h4>
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed <br>do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua.</p>
-   <div class="icons">
-      <a href="https://github.com/StreetLamp05" target="_blank"><i class="fa fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/david-kan-b79023249" target="_blank"><i class="fa fa-linkedin"></i></a>
-      <a href="https://open.spotify.com/user/david6832?si=uDW9ysqsQUyGFkp_Q0hqlA" target="_blank"><i
-            class="fa fa-spotify"></i></a>
-      <a href="https://www.instagram.com/kavid_dan" target="_blank"><i class="fa fa-instagram"></i></a>
-   </div>
-   <p>Made with CSS and HTML :)</p>
-</section>
 
 
 <!-----JavaScript for the Hamburger Menu in Mobile View----->
