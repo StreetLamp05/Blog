@@ -368,7 +368,7 @@ h3 {
 /*---------contact form----------*/
 
 form {
-   background: rgba(21, 16, 51, 0.9);
+   background: rgba(21, 16, 51, 0.65);
    width: 640px;
    margin: 50px auto;
    max-width: 95%;
@@ -378,7 +378,7 @@ form {
 }
 
 form .contact-title {
-   letter-spacing: 10px;
+   letter-spacing: 8px;
    border-bottom: 1px solid white;
    font-weight: bold;
    padding-bottom: 8px;
@@ -409,7 +409,7 @@ form .half .item input {
    border: 1px solid white;
    outline: 0;
    padding: 16px;
-   width: 100%;
+   width: 90%;
    height: 22px;
    background: transparent;
    color: white;
@@ -469,9 +469,9 @@ form .ficons a {
    margin-right: 13px;
    cursor: pointer;
    padding: 18px 0;
+   transition: 1s;
 }
 
 form .ficons a:hover {
    color: #f39b06;
-
 }
