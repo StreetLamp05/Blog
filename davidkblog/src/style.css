@@ -7,7 +7,7 @@
 .header {
    min-height: 100vh;
    width: 100%;
-   background-image: linear-gradient(to left, rgba(40, 11, 43, 0.7), rgba(21, 16, 51, 0.7)), url(images/banner.png);
+   background-image: linear-gradient(to left, rgba(40, 11, 43, 0.7), rgba(21, 16, 51, 0.7)), url(./images/banner.png);
    background-position: center;
    background-size: cover;
    position: relative;
@@ -22,6 +22,7 @@ nav {
 }
 
 nav img {
+   
    width: 200px;
 }
 

@@ -1,5 +1,7 @@
-import "./App.css";
 import "./style.css";
+import logoOff from ".//images/logo.png";
+import logoOn from ".//images/logoOn.png";
+import About from "./about";
 
 function App() {
   return (
@@ -33,28 +35,20 @@ function App() {
             <a href="index.html">
               <figure>
                 <div className="hover-ani">
-                  <img
-                    src="./images/logo.png"
-                    className="img-back"
-                    alt=""
-                  ></img>
-                  <img
-                    src="./images/logoOn.png"
-                    className="img-front"
-                    alt=""
-                  ></img>
+                  <img src={logoOff} className="img-back" alt=""></img>
+                  <img src={logoOn} className="img-front" alt=""></img>
                 </div>
               </figure>
             </a>
           </div>
           <div className="nav-links" id="navLinks">
-            <i className="fa fa-times" onclick="hideMenue()"></i>
+            <i className="fa fa-times" onclick="hideMenu()"></i>
             <ul>
               <li>
-                <a href="index.html">HOME</a>
+                <a href="App.js">HOME</a>
               </li>
               <li>
-                <a href="about.html">ABOUT</a>
+                <a href="about.js">ABOUT</a>
               </li>
               <li>
                 <a href="blog.html">BLOG</a>
