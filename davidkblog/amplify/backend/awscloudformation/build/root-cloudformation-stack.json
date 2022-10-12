@@ -167,7 +167,7 @@
             ]
           },
           "S3DeploymentBucket": "amplify-davidkblog-dev-230251-deployment",
-          "S3DeploymentRootKey": "amplify-appsync-files/ed1efe72adce188f44f61667581cfd570bce23ab",
+          "S3DeploymentRootKey": "amplify-appsync-files/7034f5c19b8cdf1a75a1f6494d46652a650cf790",
           "env": "dev"
         }
       }

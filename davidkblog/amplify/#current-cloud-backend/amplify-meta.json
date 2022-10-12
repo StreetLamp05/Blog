@@ -46,12 +46,12 @@
         "GraphQLAPIEndpointOutput": "https://zo7yp5lozrewhodi6cqmy4i2ku.appsync-api.us-east-1.amazonaws.com/graphql",
         "GraphQLAPIKeyOutput": "da2-2e3npgt7w5eixgu3db64jfpnku"
       },
-      "lastPushTimeStamp": "2022-10-12T03:25:34.357Z",
+      "lastPushTimeStamp": "2022-10-12T15:13:42.961Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-davidkblog-dev-230251-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apidavidkblog"
       },
-      "lastPushDirHash": "EWkZBmFwkg+R/z6ySlRb5kca1BI="
+      "lastPushDirHash": "Jk6A3RcDm/bTn/WtV4U3iWB5UWA="
     }
   },
   "auth": {
@@ -82,7 +82,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-davidkblog-dev-230251-deployment/amplify-cfn-templates/auth/davidkblogab4e1f7b-cloudformation-template.json",
         "logicalId": "authdavidkblogab4e1f7b"
       },
-      "lastPushTimeStamp": "2022-10-12T03:25:34.357Z",
+      "lastPushTimeStamp": "2022-10-12T15:13:42.961Z",
       "output": {
         "UserPoolId": "us-east-1_bdmtsP9RA",
         "AppClientIDWeb": "4cfipg44kagkur1vmasmmmmrqk",
@@ -92,7 +92,7 @@
         "IdentityPoolName": "davidkblogab4e1f7b_identitypool_ab4e1f7b__dev",
         "UserPoolName": "davidkblogab4e1f7b_userpool_ab4e1f7b"
       },
-      "lastPushDirHash": "IPBQKjPkxvXOXCUcwamPrLffAcI="
+      "lastPushDirHash": "e5sQObNzpebJf4hVff7PzVufcn4="
     }
   }
 }
