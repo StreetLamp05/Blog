@@ -1,15 +1,98 @@
 {
   "providers": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-davidkblog-dev-124844-authRole",
-      "UnauthRoleArn": "arn:aws:iam::411837212471:role/amplify-davidkblog-dev-124844-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::411837212471:role/amplify-davidkblog-dev-124844-authRole",
+      "AuthRoleName": "amplify-davidkblog-dev-230251-authRole",
+      "UnauthRoleArn": "arn:aws:iam::411837212471:role/amplify-davidkblog-dev-230251-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::411837212471:role/amplify-davidkblog-dev-230251-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-davidkblog-dev-124844-deployment",
-      "UnauthRoleName": "amplify-davidkblog-dev-124844-unauthRole",
-      "StackName": "amplify-davidkblog-dev-124844",
-      "StackId": "arn:aws:cloudformation:us-east-1:411837212471:stack/amplify-davidkblog-dev-124844/930a4d30-4984-11ed-994e-0e0c198b19b3",
-      "AmplifyAppId": "d3ncjs608tiz0t"
+      "DeploymentBucketName": "amplify-davidkblog-dev-230251-deployment",
+      "UnauthRoleName": "amplify-davidkblog-dev-230251-unauthRole",
+      "StackName": "amplify-davidkblog-dev-230251",
+      "StackId": "arn:aws:cloudformation:us-east-1:411837212471:stack/amplify-davidkblog-dev-230251/5caad0b0-49da-11ed-9fec-12fc58057a79",
+      "AmplifyAppId": "d1vvbtr4ano1s6"
+    }
+  },
+  "api": {
+    "davidkblog": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "auth",
+          "resourceName": "davidkblogab4e1f7b",
+          "attributes": [
+            "UserPoolId"
+          ]
+        }
+      ],
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            }
+          },
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+              "userPoolConfig": {
+                "userPoolId": "authdavidkblogab4e1f7b"
+              }
+            }
+          ]
+        },
+        "GraphQLAPIIdOutput": "suhu3etyp5gbfdvwmfcnd26mrm",
+        "GraphQLAPIEndpointOutput": "https://zo7yp5lozrewhodi6cqmy4i2ku.appsync-api.us-east-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-2e3npgt7w5eixgu3db64jfpnku"
+      },
+      "lastPushTimeStamp": "2022-10-12T03:25:34.357Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-davidkblog-dev-230251-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apidavidkblog"
+      },
+      "lastPushDirHash": "EWkZBmFwkg+R/z6ySlRb5kca1BI="
+    }
+  },
+  "auth": {
+    "davidkblogab4e1f7b": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-davidkblog-dev-230251-deployment/amplify-cfn-templates/auth/davidkblogab4e1f7b-cloudformation-template.json",
+        "logicalId": "authdavidkblogab4e1f7b"
+      },
+      "lastPushTimeStamp": "2022-10-12T03:25:34.357Z",
+      "output": {
+        "UserPoolId": "us-east-1_bdmtsP9RA",
+        "AppClientIDWeb": "4cfipg44kagkur1vmasmmmmrqk",
+        "AppClientID": "6j4j1tn1rf09nd50bt2kbvjj0h",
+        "IdentityPoolId": "us-east-1:ee27a282-a41b-4151-9fb2-16753b4997f1",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:411837212471:userpool/us-east-1_bdmtsP9RA",
+        "IdentityPoolName": "davidkblogab4e1f7b_identitypool_ab4e1f7b__dev",
+        "UserPoolName": "davidkblogab4e1f7b_userpool_ab4e1f7b"
+      },
+      "lastPushDirHash": "IPBQKjPkxvXOXCUcwamPrLffAcI="
     }
   }
 }
