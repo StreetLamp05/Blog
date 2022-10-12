@@ -2,6 +2,11 @@
 <html>
 
 <head>
+   <script>
+      function alertUser(msg) {
+         alert(msg);
+      }
+   </script>
    <meta name="viewport" content="with=device-width, initial-scale=1.0">
    <title> David Kan Blog's </title>
    <link rel="stylesheet" href="style.css">
@@ -11,47 +16,53 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap">
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<body onload="alertUser('This page is still under development')">
+   <section class="header">
+      <nav>
+         <a href="index.html">
+            <figure>
+               <div class="hover-ani">
+                  <img src="images/logo.png" class="img-back">
+                  <img src="images/logoOn.png" class="img-front">
+               </div>
+            </figure>
+         </a>
+         <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+               <li><a href="index.html">HOME</a></li>
+               <li><a href="about.html">ABOUT</a></li>
+               <li><a href="blog.html">BLOG</a></li>
+               <li><a href="photography.html">PHOTOGRAPHY</a></li>
+               <li><a href="music.html">MUSIC</a></li>
+               <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+         </div>
+         <i class="fa fa-bars" onclick="showMenu()"></i>
 
-<section class="header">
-   <nav>
-      <a href="index.html">
-         <figure>
-            <div class="hover-ani">
-               <img src="images/logo.png" class="img-back">
-               <img src="images/logoOn.png" class="img-front">
-            </div>
-         </figure>
-      </a>
-      <div class="nav-links" id="navLinks">
-         <i class="fa fa-times" onclick="hideMenu()"></i>
-         <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="blog.html">BLOG</a></li>
-            <li><a href="photography.html">PHOTOGRAPHY</a></li>
-            <li><a href="music.html">MUSIC</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-         </ul>
-      </div>
-      <i class="fa fa-bars" onclick="showMenu()"></i>
-
-   </nav>
+      </nav>
 
 
-   <!-----JavaScript for the Hamburger Menu in Mobile View----->
-<script>
+      <!-----JavaScript for the Hamburger Menu in Mobile View----->
+   <script>
 
-var navLink = document.getElementById("navLinks");
+   var navLink = document.getElementById("navLinks");
 
-function showMenu(){
-   navLinks.style.right = "0";
-}
+   function showMenu(){
+      navLinks.style.right = "0";
+   }
 
-function hideMenu(){
-   navLinks.style.right = "-200px"
-}
+   function hideMenu(){
+      navLinks.style.right = "-200px"
+   }
 
-</script>
+
+      // wip alert 
+      function myalert() {
+               alert("This page is still in development\n ");
+         }
+
+   </script>
 
 </body>
 </html>
